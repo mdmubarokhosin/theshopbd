@@ -1,0 +1,14 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "shop": {
+      ".read": true,
+      ".write": true
+    },
+    "webhooks": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

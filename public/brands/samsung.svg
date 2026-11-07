@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" role="img" aria-label="Samsung">
+  <rect width="400" height="160" rx="18" fill="#0b1a33"/>
+  <rect x="10" y="10" width="380" height="140" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="200" y="92" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">Samsung</text>
+  
+</svg>

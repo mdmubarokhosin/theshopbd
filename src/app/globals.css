@@ -1,0 +1,744 @@
+/* সম্পূর্ণ ওয়েবসাইটের ফন্ট — Noto Serif Bengali (ইউজারের দেওয়া ইমপোর্ট) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* সম্পূর্ণ সাইটের ডিফল্ট ফন্ট — Noto Serif Bengali (অফলাইনে সিস্টেম serif fallback) */
+  --font-sans: "Noto Serif Bengali", ui-serif, Georgia, "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  --color-honey: var(--honey);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.99 0.005 120);
+  --foreground: oklch(0.22 0.03 150);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.03 150);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.03 150);
+  --primary: oklch(0.45 0.11 155);
+  --primary-foreground: oklch(0.985 0.01 120);
+  --secondary: oklch(0.96 0.02 130);
+  --secondary-foreground: oklch(0.32 0.06 150);
+  --muted: oklch(0.96 0.01 130);
+  --muted-foreground: oklch(0.5 0.02 150);
+  --accent: oklch(0.95 0.04 120);
+  --accent-foreground: oklch(0.32 0.08 150);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.02 130);
+  --input: oklch(0.9 0.02 130);
+  --ring: oklch(0.45 0.11 155);
+  --chart-1: oklch(0.45 0.11 155);
+  --chart-2: oklch(0.72 0.15 75);
+  --chart-3: oklch(0.6 0.12 140);
+  --chart-4: oklch(0.75 0.14 85);
+  --chart-5: oklch(0.55 0.12 50);
+  --sidebar: oklch(0.985 0.01 120);
+  --sidebar-foreground: oklch(0.22 0.03 150);
+  --sidebar-primary: oklch(0.45 0.11 155);
+  --sidebar-primary-foreground: oklch(0.985 0.01 120);
+  --sidebar-accent: oklch(0.95 0.04 120);
+  --sidebar-accent-foreground: oklch(0.32 0.08 150);
+  --sidebar-border: oklch(0.9 0.02 130);
+  --sidebar-ring: oklch(0.45 0.11 155);
+  --brand: oklch(0.42 0.12 155);
+  --brand-dark: oklch(0.34 0.1 155);
+  --brand-light: oklch(0.95 0.05 135);
+  --honey: oklch(0.72 0.16 75);
+}
+
+.dark {
+  --background: oklch(0.16 0.02 150);
+  --foreground: oklch(0.95 0.01 130);
+  --card: oklch(0.2 0.025 150);
+  --card-foreground: oklch(0.95 0.01 130);
+  --popover: oklch(0.2 0.025 150);
+  --popover-foreground: oklch(0.95 0.01 130);
+  --primary: oklch(0.7 0.13 150);
+  --primary-foreground: oklch(0.16 0.02 150);
+  --secondary: oklch(0.26 0.03 150);
+  --secondary-foreground: oklch(0.95 0.01 130);
+  --muted: oklch(0.26 0.03 150);
+  --muted-foreground: oklch(0.68 0.02 140);
+  --accent: oklch(0.28 0.04 150);
+  --accent-foreground: oklch(0.95 0.01 130);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.7 0.13 150);
+  --chart-1: oklch(0.7 0.13 150);
+  --chart-2: oklch(0.72 0.15 75);
+  --chart-3: oklch(0.6 0.12 140);
+  --chart-4: oklch(0.75 0.14 85);
+  --chart-5: oklch(0.55 0.12 50);
+  --sidebar: oklch(0.2 0.025 150);
+  --sidebar-foreground: oklch(0.95 0.01 130);
+  --sidebar-primary: oklch(0.7 0.13 150);
+  --sidebar-primary-foreground: oklch(0.16 0.02 150);
+  --sidebar-accent: oklch(0.28 0.04 150);
+  --sidebar-accent-foreground: oklch(0.95 0.01 130);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.7 0.13 150);
+  --brand: oklch(0.7 0.13 150);
+  --brand-dark: oklch(0.55 0.11 152);
+  --brand-light: oklch(0.28 0.05 150);
+  --honey: oklch(0.75 0.15 78);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: oklch(0.75 0.05 150);
+  border-radius: 999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0.08 152);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Bengali font helper */
+.font-bengali {
+  font-family: "Noto Serif Bengali", "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", ui-serif, serif;
+}
+
+/* Noto Serif Bengali — ইউজারের দেওয়া ক্লাস সংজ্ঞা (ভেরিয়েবল ওয়েট ১০০–৯০০) */
+.noto-serif-bengali {
+  font-family: "Noto Serif Bengali", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Product image hover zoom */
+.product-img-zoom img {
+  transition: transform 0.5s ease;
+}
+.product-img-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(100deg, rgba(20, 60, 40, 0.75) 0%, rgba(20, 60, 40, 0.45) 45%, rgba(20, 60, 40, 0.05) 75%);
+}
+
+/* Marquee animation for announcement */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+/* ===== Android native app feel ===== */
+html {
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* ============================================================
+   Horizontal overflow guard — মোবাইলে পেজ ডানে-বামে মুভ বন্ধ
+   ------------------------------------------------------------
+   clip ব্যবহার করা হয়েছে (hidden নয়): clip কনটেন্ট কাটলেও
+   scroll container তৈরি করে না, তাই position: sticky হেডার
+   ও ভেতরের overflow-x-auto স্ক্রলার স্বাভাবিক কাজ করে।
+   ============================================================ */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* মিডিয়া এলিমেন্ট কখনো ভিউপোর্টের চেয়ে চওড়া হবে না */
+img,
+video,
+canvas,
+svg,
+iframe {
+  max-width: 100%;
+}
+
+/* লম্বা টোকেন (অর্ডার নম্বর, URL, ইমেইল) টেবিল সেলে ভেঙে পড়বে — প্রস্থ ঠেলে বের হবে না */
+td,
+th,
+dd,
+li {
+  overflow-wrap: break-word;
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Allow text selection where it matters */
+input, textarea,
+[data-selectable] {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Safe area insets for notched devices */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.safe-bottom-nav {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0px);
+}
+
+/* App splash screen */
+@keyframes splash-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+}
+@keyframes splash-fade-out {
+  0% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+.splash-logo {
+  animation: splash-pulse 1.2s ease-in-out infinite;
+}
+.splash-exit {
+  animation: splash-fade-out 0.45s ease forwards;
+}
+
+/* Ripple-ish press feedback for app feel */
+.press-effect {
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.press-effect:active {
+  transform: scale(0.96);
+  opacity: 0.85;
+}
+
+/* Bottom nav active indicator */
+@keyframes nav-pop {
+  0% { transform: scale(0.7); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.nav-item-active .nav-icon {
+  animation: nav-pop 0.25s ease;
+}
+
+/* Status-bar style top spacing in standalone mode */
+@media all and (display-mode: standalone) {
+  .app-standalone-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* Hide scrollbar on horizontal chip rows */
+.chips-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.chips-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================================
+   Hero section — bdeasyshop.com style
+   Slider (2fr) + two side offer banners (1fr).
+   Banner text/photos sized with container-query units (cqw)
+   so mobile and desktop render the same composition.
+   ============================================================ */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 2 / 1;
+  touch-action: pan-y;
+}
+.hero-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.hero-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+/* --- Themed banner (container-query based) --- */
+.ab-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  container-type: inline-size;
+  color: var(--ab-ink);
+  background: var(--ab-bg);
+  cursor: pointer;
+}
+.ab-banner::before {
+  content: "";
+  position: absolute;
+  width: 62cqw;
+  aspect-ratio: 1;
+  right: -8cqw;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--ab-glow);
+}
+.ab-theme-0 {
+  --ab-bg: radial-gradient(circle at 75% 50%, #3a2a1f 0%, #16130f 70%);
+  --ab-ink: #ffffff;
+  --ab-accent: #ff8a1a;
+  --ab-glow: rgba(255, 138, 26, 0.14);
+  --ab-btn: #ff7a00;
+  --ab-btn-ink: #ffffff;
+}
+.ab-theme-1 {
+  --ab-bg: linear-gradient(120deg, #fff6ea 0%, #ffd7a8 100%);
+  --ab-ink: #24201c;
+  --ab-accent: #d9480f;
+  --ab-glow: rgba(255, 255, 255, 0.45);
+  --ab-btn: #24201c;
+  --ab-btn-ink: #ffffff;
+}
+.ab-theme-2 {
+  --ab-bg: linear-gradient(120deg, #eef3f9 0%, #c3d3e6 100%);
+  --ab-ink: #18263a;
+  --ab-accent: #1f5c99;
+  --ab-glow: rgba(255, 255, 255, 0.45);
+  --ab-btn: #18263a;
+  --ab-btn-ink: #ffffff;
+}
+.ab-theme-3 {
+  --ab-bg: linear-gradient(120deg, #f5f0f9 0%, #d8c8ec 100%);
+  --ab-ink: #2d1f42;
+  --ab-accent: #7c3aed;
+  --ab-glow: rgba(255, 255, 255, 0.45);
+  --ab-btn: #2d1f42;
+  --ab-btn-ink: #ffffff;
+}
+
+.ab-text {
+  position: absolute;
+  left: 6cqw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50cqw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2cqw;
+  z-index: 1;
+}
+.ab-store {
+  font-size: max(10px, 1.9cqw);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.ab-title {
+  font-size: 6.2cqw;
+  font-weight: 700;
+  line-height: 1.12;
+  color: var(--ab-ink);
+}
+.ab-tagline {
+  font-size: 2.6cqw;
+  font-weight: 600;
+  color: var(--ab-accent);
+}
+.ab-price {
+  font-size: 2.3cqw;
+  opacity: 0.9;
+}
+.ab-price strong {
+  font-size: 3cqw;
+  color: var(--ab-accent);
+}
+.ab-price em {
+  display: inline-block;
+  margin-left: 0.8cqw;
+  padding: 0.3cqw 1.2cqw;
+  border-radius: 99px;
+  background: var(--ab-accent);
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.9cqw;
+  vertical-align: middle;
+}
+.ab-cta {
+  margin-top: 1cqw;
+  padding: 1.3cqw 3cqw;
+  border-radius: 99px;
+  background: var(--ab-btn);
+  color: var(--ab-btn-ink);
+  font-size: max(11px, 2.3cqw);
+  font-weight: 600;
+}
+.ab-photos {
+  position: absolute;
+  right: 4cqw;
+  top: 0;
+  bottom: 0;
+  width: 42cqw;
+  z-index: 1;
+  pointer-events: none;
+}
+.ab-photos img {
+  position: absolute;
+  top: 50%;
+  aspect-ratio: 3 / 4;
+  width: auto;
+  object-fit: cover;
+  border-radius: 1.6cqw;
+  border: 0.6cqw solid #ffffff;
+  box-shadow: 0 1.5cqw 3.5cqw rgba(0, 0, 0, 0.28);
+  background: #f3f4f6;
+}
+.ab-photos.n1 img {
+  height: 82%;
+  right: 6cqw;
+  transform: translateY(-50%) rotate(3deg);
+}
+.ab-photos.n2 img:nth-child(1) {
+  height: 70%;
+  right: 18cqw;
+  transform: translateY(-50%) rotate(-6deg);
+}
+.ab-photos.n2 img:nth-child(2) {
+  height: 82%;
+  right: 2cqw;
+  transform: translateY(-50%) rotate(4deg);
+  z-index: 1;
+}
+.ab-photos.n3 img:nth-child(1) {
+  height: 66%;
+  right: 24cqw;
+  transform: translateY(-50%) rotate(-8deg);
+}
+.ab-photos.n3 img:nth-child(3) {
+  height: 66%;
+  right: 0;
+  transform: translateY(-50%) rotate(8deg);
+}
+.ab-photos.n3 img:nth-child(2) {
+  height: 84%;
+  right: 10cqw;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* --- Side offer banners: bigger words, one photo --- */
+.ab-banner.side .ab-text {
+  left: 7cqw;
+  width: 52cqw;
+  gap: 2.2cqw;
+}
+.ab-banner.side .ab-store {
+  display: none;
+}
+.ab-banner.side .ab-title {
+  font-size: 8.4cqw;
+  line-height: 1.15;
+}
+.ab-banner.side .ab-tagline {
+  font-size: 4.4cqw;
+}
+.ab-banner.side .ab-cta {
+  margin-top: 0.5cqw;
+  font-size: 4cqw;
+  padding: 1.8cqw 4.6cqw;
+}
+.ab-banner.side .ab-photos {
+  width: 40cqw;
+  right: 3cqw;
+}
+.ab-banner.side .ab-photos img {
+  border-width: 1cqw;
+  border-radius: 3cqw;
+}
+
+.side-banners {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+}
+.side-banners .ab-banner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .side-banners {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .side-banners .ab-banner {
+    aspect-ratio: 2 / 1;
+  }
+}
+
+/* --- Slider dots: 24px tap area, visible dot inside via background-clip --- */
+.hero-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  z-index: 2;
+}
+.hero-dots button {
+  width: 24px;
+  height: 24px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.55);
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.hero-dots button.on {
+  background-color: var(--brand-dot, #ff7a00);
+}
+
+/* --- Category grid (Daraz-স্টাইল ছোট টাইল) — স্টাইল কম্পোনেন্টে Tailwind দিয়ে করা --- */
+
+/* ============================================================
+   Page transition — রাউট/সেকশন বদলালে স্মুথ ফেড-আপ অ্যানিমেশন
+   ============================================================ */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.page-enter {
+  /* fill-mode নেই — শেষ হলে transform সম্পূর্ণ none হয়, যাতে fixed
+     স্টিকি অ্যাকশন বার (প্রোডাক্ট পেজ) viewport-এর সাথে আটকে না যায় */
+  animation: page-in 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* হালকা ফেড (কার্ড/লিস্ট স্ট্যাগারের ভিত্তি) */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise-in {
+  animation: rise-in 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.rise-in-1 { animation-delay: 0.04s; }
+.rise-in-2 { animation-delay: 0.08s; }
+.rise-in-3 { animation-delay: 0.12s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter,
+  .rise-in,
+  .rise-in-1,
+  .rise-in-2,
+  .rise-in-3 {
+    animation: none;
+  }
+}
+
+/* ============================================================
+   Footer — ব্র্যান্ড কালার থিম (গাঢ় গ্রিন + হানি অ্যাকসেন্ট)
+   ============================================================ */
+
+/* উপরের হানি → গ্রিন গ্রেডিয়েন্ট স্ট্রিপ */
+.footer-strip {
+  background: linear-gradient(
+    90deg,
+    oklch(0.72 0.16 75) 0%,
+    oklch(0.66 0.15 88) 28%,
+    oklch(0.48 0.11 140) 68%,
+    oklch(0.34 0.1 155) 100%
+  );
+}
+
+/* মূল ফুটার — গাঢ় ব্র্যান্ড গ্রিন গ্রেডিয়েন্ট + সফট গ্লো */
+.footer-brand {
+  color: #ffffff;
+  background:
+    radial-gradient(120% 100% at 85% 0%, oklch(0.44 0.12 148 / 0.55) 0%, transparent 55%),
+    radial-gradient(80% 90% at 8% 100%, oklch(0.72 0.16 75 / 0.12) 0%, transparent 55%),
+    linear-gradient(150deg, oklch(0.34 0.1 155) 0%, oklch(0.40 0.115 152) 52%, oklch(0.35 0.105 149) 100%);
+}
+.dark .footer-brand {
+  background:
+    radial-gradient(120% 100% at 85% 0%, oklch(0.33 0.07 150 / 0.5) 0%, transparent 55%),
+    radial-gradient(80% 90% at 8% 100%, oklch(0.72 0.16 75 / 0.09) 0%, transparent 55%),
+    linear-gradient(150deg, oklch(0.2 0.045 152) 0%, oklch(0.25 0.06 150) 52%, oklch(0.21 0.05 149) 100%);
+}
+
+/* সূক্ষ্ম ডট প্যাটার্ন — উপরে ঘন, নিচের দিকে মিলিয়ে যায় */
+.footer-pattern {
+  background-image: radial-gradient(oklch(1 0 0 / 0.055) 1px, transparent 1.5px);
+  background-size: 20px 20px;
+  -webkit-mask-image: linear-gradient(to bottom, oklch(0 0 0) 0%, transparent 70%);
+  mask-image: linear-gradient(to bottom, oklch(0 0 0) 0%, transparent 70%);
+}
+
+/* নিচের কপিরাইট বার — আরও গাঢ় গ্রিন */
+.footer-brand-deep {
+  background: oklch(0.28 0.08 153);
+}
+.dark .footer-brand-deep {
+  background: oklch(0.16 0.035 152);
+}
+
+/* ============================================================
+   Product detail — Android native app feel
+   ============================================================ */
+
+/* গ্যালারি স্ন্যাপ ক্যারোসেল (মোবাইল) */
+.pd-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.pd-carousel::-webkit-scrollbar {
+  display: none;
+}
+.pd-carousel > * {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/* কনটেন্ট শিট — গ্যালারির উপরে গোল কর্নার ওভারল্যাপ (শুধু মোবাইল) */
+@media (max-width: 767px) {
+  .pd-sheet {
+    position: relative;
+    z-index: 10;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-top: -1.5rem;
+    background: var(--background);
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.07);
+  }
+}
+
+/* স্টিকি বটম অ্যাকশন বার (প্রোডাক্ট পেজ, মোবাইল) */
+.pd-actionbar {
+  animation: bar-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes bar-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ছবি জুম ইন্টারঅ্যাকশন (অ্যাকটিভ স্লাইডে হালকা ইলাস্ট্রেটিভ মোশন) */
+@keyframes hero-img-in {
+  from {
+    opacity: 0.4;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.pd-img-in {
+  animation: hero-img-in 0.35s ease both;
+}
