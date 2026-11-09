@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="Nagad">
+  <rect width="320" height="120" rx="14" fill="#ffffff" stroke="#e5e5e5"/>
+  <path d="M40 78 C60 30 108 26 128 44 C112 38 74 44 66 78 Z" fill="#ED1C24"/>
+  <text x="138" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="800" fill="#F47721">Nagad</text>
+  <text x="52" y="98" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#F47721" opacity="0.8">নগদ</text>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "name": "THE SHOP BD — মাল্টিব্র্যান্ড অনলাইন শপ",
+  "short_name": "THE SHOP BD",
+  "description": "ইলেকট্রনিকস, ফ্যাশন, হোম ও লিভিং, বিউটিসহ ২১+ বিখ্যাত ব্র্যান্ডের অরিজিনাল পণ্যের মাল্টিব্র্যান্ড অনলাইন শপ",
+  "lang": "bn",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1a5c38",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "shopping",
+    "food"
+  ]
+}

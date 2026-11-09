@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="Rocket">
+  <rect width="320" height="120" rx="14" fill="#ffffff" stroke="#e5e5e5"/>
+  <path d="M46 76 C52 46 78 36 96 42 C80 48 68 60 64 78 Z" fill="#F37021"/>
+  <circle cx="86" cy="58" r="7" fill="#8C3494"/>
+  <text x="106" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="800" fill="#8C3494">Rocket</text>
+  <text x="106" y="94" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#8C3494" opacity="0.7">DBBL মোবাইল ব্যাংকিং</text>
+</svg>
